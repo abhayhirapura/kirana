@@ -10,8 +10,15 @@ body {
 }
 
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: rgb(215, 46, 46);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 .daily-usage-heading {
     text-align: center;
 }
@@ -33,7 +40,9 @@ body {
     justify-content: space-between;
     gap: 1rem;
     padding: 1.5rem 2rem;
+    flex-wrap: wrap;        /* 🔥 mobile fix */
 }
+
 
 .img1{
     height: 5rem;
@@ -367,25 +376,44 @@ hr{
     transform: scale(1.1);
 }
 
-
 @media (max-width: 600px){
+
+    /* 🔹 Navbar / Header */
     .logo{
         flex-direction: column;
-        gap: 1rem;
+        align-items: stretch;
+        gap: 0.8rem;
+        padding: 1rem;
+    }
+
+    .left{
+        display: flex;
+        justify-content: center;
     }
 
     .search{
         width: 100%;
+        display: flex;
+    }
+
+    .searching{
+        width: 100%;
     }
 
     .right{
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .welcome-line h2{
-        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
     }
 
+    /* 🔹 Welcome text */
+    .welcome-line h2{
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    /* 🔹 Product sections (2 cards per row) */
     .cooking,
     .pkgfood,
     .soap,
@@ -397,16 +425,19 @@ hr{
     .tobaco{
         padding: 1rem;
         grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
-.footer-content {
+    /* 🔹 Footer */
+    .footer-content{
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 1rem;
     }
 
-    .social-icons {
+    .social-icons{
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 0.5rem;
     }
 }
