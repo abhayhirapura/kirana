@@ -375,20 +375,23 @@ hr{
 .social-icons img:hover {
     transform: scale(1.1);
 }
-
 @media (max-width: 600px){
 
-    /* 🔹 Navbar / Header */
+    /* 🔹 Header / Navbar (COMPACT) */
     .logo{
         flex-direction: column;
         align-items: stretch;
-        gap: 0.8rem;
-        padding: 1rem;
+        gap: 0.4rem;              /* 🔽 space kam */
+        padding: 0.6rem 0.8rem;   /* 🔽 padding kam */
     }
 
     .left{
         display: flex;
         justify-content: center;
+    }
+
+    .left img{
+        height: 36px;             /* 🔽 logo chhota */
     }
 
     .search{
@@ -398,22 +401,44 @@ hr{
 
     .searching{
         width: 100%;
+        padding: 6px;
+        font-size: 0.85rem;
+    }
+
+    .search-btn{
+        padding: 6px 10px;
+        font-size: 0.85rem;
     }
 
     .right{
         display: flex;
         justify-content: center;
-        gap: 0.8rem;
+        gap: 0.5rem;
     }
 
-    /* 🔹 Welcome text */
+    .cartt{
+        width: 26px;
+        height: 26px;
+    }
+
+    .signin-btn{
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    /* 🔹 Welcome / About line (COMPACT) */
+    .welcome-line{
+        padding: 0.4rem 0;
+    }
+
     .welcome-line h2{
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-align: center;
-        line-height: 1.4;
+        line-height: 1.3;
+        margin: 0;
     }
 
-    /* 🔹 Product sections (2 cards per row) */
+    /* 🔹 Product sections (2 per row) */
     .cooking,
     .pkgfood,
     .soap,
@@ -423,9 +448,9 @@ hr{
     .mosquito,
     .pooja,
     .tobaco{
-        padding: 1rem;
+        padding: 0.8rem;          /* 🔽 space kam */
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 0.8rem;
     }
 
     /* 🔹 Footer */
@@ -433,11 +458,11 @@ hr{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 1rem;
+        gap: 0.6rem;
     }
 
     .social-icons{
         justify-content: center;
-        margin-top: 0.5rem;
+        margin-top: 0.3rem;
     }
 }
