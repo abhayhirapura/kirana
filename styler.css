@@ -40,7 +40,7 @@ body {
     justify-content: space-between;
     gap: 1rem;
     padding: 1.5rem 2rem;
-    flex-wrap: wrap;        /* 🔥 mobile fix */
+    flex-wrap: wrap;        
 }
 
 
@@ -77,9 +77,6 @@ body {
     border: none;
     cursor: pointer;
 }
-
-/* Cart */
-/* Right section: cart + sign in */
 .right{
     display: flex;
     align-items: center;
@@ -102,7 +99,7 @@ body {
     color: rgb(215,46,46);
 }
 .welcome-line{
-    background-color: #f7caca; /* soft red/pinkish */
+    background-color: #f7caca; 
     text-align: center;
     padding: 15px 0;
     margin-top: 10px;
@@ -142,27 +139,23 @@ body {
 }
 
 
-
-/* Scrollable slider container */
 .slider-scroll {
     overflow-x: auto;
-    scroll-behavior: smooth; /* smooth scrolling */
-    -webkit-overflow-scrolling: touch; /* mobile smooth scroll */
+    scroll-behavior: smooth; 
+    -webkit-overflow-scrolling: touch; 
     margin: 10px 0;
     padding-bottom: 10px;
 }
-
-/* Inner slides container */
 .slides-scroll {
     display: flex;
     gap: 10px;
 }
 
-/* Each image */
+
 .slides-scroll img {
-    flex: 0 0 auto; /* prevent shrinking */
-    width: 100%;    /* full width for large screens */
-    max-width: 600px; /* max size */
+    flex: 0 0 auto; 
+    width: 100%;   
+    max-width: 600px; 
     height: 300px;
     object-fit: cover;
     border-radius: 12px;
@@ -377,12 +370,11 @@ hr{
 }
 @media (max-width: 600px){
 
-    /* 🔹 Header / Navbar (COMPACT) */
     .logo{
         flex-direction: column;
         align-items: stretch;
-        gap: 0.4rem;              /* 🔽 space kam */
-        padding: 0.6rem 0.8rem;   /* 🔽 padding kam */
+        gap: 0.4rem;              
+        padding: 0.6rem 0.8rem;   
     }
 
     .left{
@@ -391,7 +383,7 @@ hr{
     }
 
     .left img{
-        height: 36px;             /* 🔽 logo chhota */
+        height: 36px;             
     }
 
     .search{
